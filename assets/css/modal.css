@@ -1,0 +1,190 @@
+#modal {
+	position: fixed;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+
+}
+
+#modalContent {
+	position: relative;
+	border-radius: 1rem;
+	box-shadow: 2px 2px 12px #444;
+	background-color: white;
+	width: 100%;
+	min-height: 300px;
+	max-width: 500px;
+	max-height: 700px;
+}
+
+#modalContent #closeModalBtn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: none;
+	border-radius: 50%;
+	padding: .3rem .7rem;
+	margin: 1rem;
+	cursor: pointer;
+	opacity: 0.5;
+	z-index: 2;
+}
+
+#modalContent #closeModalBtn::after {
+	display: inline-block;
+	content: "\00d7";
+	font-size: 1.5rem;
+}
+
+#modalContent .pokemon-details .header {
+	position: relative;
+	padding: 2rem;
+	border-radius: 1rem 1rem 0 0;
+	margin-bottom: -2rem;
+}
+
+#modalContent .pokemon-details .header .watermark-modal {
+	z-index: 1;
+	bottom: 30%;
+	left: 30%;
+	width: 100%;
+	position: absolute;
+}
+
+#modalContent .pokemon-details .header .info {
+	display: flex;
+	flex-direction: column;
+	gap: .3rem;
+}
+
+#modalContent .pokemon-details .header .info .number {
+	opacity: .5;
+	font-size: 1.5rem;
+}
+
+#modalContent .pokemon-details .header .info .name {
+	font-size: 2rem;
+	color: white;
+	font-weight: bolder;
+	text-transform: capitalize;
+}
+
+#modalContent .pokemon-details .header .info .types {
+	height: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-bottom: 1rem;
+	gap: 10px;
+}
+
+#modalContent .pokemon-details .header .info .types .type {
+	transform: scale(1.3);
+}
+
+
+#modalContent .pokemon-details .header img {
+	width: 40%;
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 70px;
+	margin: auto;
+	z-index: 3;
+	min-width: 150px;
+}
+
+#modalContent .pokemon-details .details {
+	border-radius: 2.5rem 2.5rem 1rem 1rem;
+	padding: 4rem 2rem;
+	z-index: 1;
+	position: relative;
+	background-color: white;
+	height: 400px;
+}
+
+#modalContent .pokemon-details .details button {
+	background: none;
+	border: none;
+	font-size: 1.3rem;
+	padding: 1rem;
+	cursor: pointer;
+	opacity: .4;
+}
+
+#modalContent .pokemon-details .details button:hover,
+#modalContent .pokemon-details .details .selected {
+	opacity: 1;
+}
+
+#modalContent .pokemon-details .details .selected::after {
+	display: block;
+	content: "";
+	width: 100%;
+	margin-top: 1rem;
+	height: 2px;
+	background-color: black;
+}
+
+
+#modalContent .pokemon-details .details .detail-page {
+	display: flex;
+	gap: 5px;
+	height: 4rem;
+	align-items: flex-start;
+}
+
+#modalContent .pokemon-details .details #infos,
+#modalContent .pokemon-details .details #stats {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	list-style: none;
+	height: 100%;
+	padding: 4rem 1rem;
+	margin: 0;
+	font-size: 1rem;
+	gap: 10px;
+}
+
+#modalContent .pokemon-details .details #infos span,
+#modalContent .pokemon-details .details #stats span {
+	width: 100px;
+	display: inline-block;
+}
+
+#modalContent .pokemon-details .details #stats span {
+	width: 250px;
+}
+
+#modalContent .pokemon-details .details #stats .stat {
+	display: flex;
+	align-items: center;
+	text-transform: capitalize;
+}
+
+#modalContent .pokemon-details .details #stats .bar {
+	display: block;
+	width: 100%;
+	height: 5px;
+	box-shadow: 4px 3px 6px darkgray;
+}
+
+#modalContent .pokemon-details .details #stats .bar .progress {
+	position: relative;
+	height: inherit;
+	background-color: red;
+}
+
+#modalContent .pokemon-details .details #stats .bar .progress span {
+	position: absolute;
+    bottom: 150%;
+    left: 90%;
+    width: 100%;
+    display: block;
+    font-size: .9rem;
+    font-weight: bold;
+}

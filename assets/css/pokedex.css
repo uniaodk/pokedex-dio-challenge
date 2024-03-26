@@ -1,0 +1,97 @@
+.content {
+	padding: 1rem;
+}
+
+.content h1 {
+	font-family: 'Pokemon Solid', sans-serif;
+	text-align: center;
+	font-weight: 500;
+	font-size: xxx-large;
+	color: white;
+	text-shadow: 3px 6px 12px black;
+}
+
+.pokemons {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.pokemon {
+	display: flex;
+	flex-direction: column;
+	max-width: 170px;
+	min-width: 170px;
+	width: 100%;
+	margin: .5rem;
+	padding: 1rem;
+	border-radius: 1rem;
+	color: #fff;
+	cursor: pointer;
+}
+
+.pokemon:hover  {
+	box-shadow: 2px 2px 15px black;
+	transform: scale(110%);
+}
+
+.pokemon .number {
+	color: #000;
+	opacity: .3;
+	text-align: right;
+	font-size: .625rem;
+}
+
+.pokemon .name {
+	margin: .25rem 0;
+	text-transform: capitalize;
+	font-weight: bold;
+}
+
+.pokemon .detail {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: .3rem;
+}
+
+.pokemon .detail .types {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-transform: capitalize;
+}
+
+.pokemon .detail .types .type {
+	margin: .25rem 0;
+	color: #fff;
+	padding: .25rem .5rem;
+	font-size: .625rem;
+	border-radius: 1rem;
+	filter: brightness(1.15);
+	text-shadow: 1px 1px black;
+}
+
+.pokemon .detail img {
+	max-width: 100%;
+	width: 80px;
+}
+
+.paginator {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 1rem;
+}
+
+.paginator button {
+	padding: 1rem;
+	background-color: cadetblue;
+	color: #fff;
+	border: none;
+	border-radius: 1rem;
+	cursor: pointer;
+}
