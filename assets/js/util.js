@@ -1,6 +1,6 @@
 const util = {};
 
-const MAX_STATS = 200;
+const MAX_STATS = 250;
 
 util.addEventListenerOnTagText = (tagText, eventType, action) => {
 	const tagElement = util.toNode(tagText)
