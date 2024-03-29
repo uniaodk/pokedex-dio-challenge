@@ -15,7 +15,7 @@ Develop the details screen for each Pokémon in the Pokedex
 https://uniaodk.github.io/pokedex-dio-challenge/
 
 <img src="https://github.com/uniaodk/pokedex-dio-challenge/assets/52884069/80757693-110a-499c-8c36-4cc8de47e791" width="200"/>
-<img src="https://github.com/uniaodk/pokedex-dio-challenge/assets/52884069/c629dc33-f071-4e77-8941-97a18881a162" width="200"/>
-<img src="https://github.com/uniaodk/pokedex-dio-challenge/assets/52884069/4e22030b-02ce-4eff-ac64-3910cfe547db" width="200"/>
+<img src="https://github.com/uniaodk/pokedex-dio-challenge/assets/52884069/ab10fae8-2e5e-44d9-99a9-c6fd2cc3a10e" width="200"/>
+<img src="https://github.com/uniaodk/pokedex-dio-challenge/assets/52884069/a156970b-ac87-411f-893d-2a3d4a6aff6f" width="200"/>
 
 
