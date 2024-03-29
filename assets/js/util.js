@@ -19,12 +19,13 @@ util.pokemonTypeToLiTag = (pokemonTypes) => {
 }
 
 util.pokemonStatsToLiTag = (pokemonStats) => {
-	return Object.entries(pokemonStats).map(([statName, value]) => {
+	return Object.entries(pokemonStats).map(([statName, value], index) => {
 		const percentage = (value / MAX_STATS) * 100;
+		const colorBar = index % 2 === 0 ? 'crimson' : "cornflowerblue";
 		return `<li class="stat">
 		<span>${statName.split("-").join(' ')}</span>
 		<div class="bar" title="${value}">
-			<div style="width: ${percentage}%;" class="progress">
+			<div style="width: ${percentage}%; background-color: ${colorBar};" class="progress">
 				<span>${value}</span>
 			</div>
 		</div>

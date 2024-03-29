@@ -176,7 +176,6 @@
 #modalContent .pokemon-details .details #stats .bar .progress {
 	position: relative;
 	height: inherit;
-	background-color: red;
 }
 
 #modalContent .pokemon-details .details #stats .bar .progress span {
@@ -187,4 +186,10 @@
     display: block;
     font-size: .9rem;
     font-weight: bold;
+}
+
+@media screen and (max-width: 460px) {
+	#modalContent .pokemon-details .header img {
+		top: 100px;
+	}
 }
